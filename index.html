@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dog-chat-app-design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+
+<body>
+
+    <!-- main container  -->
+    <div class="main-container">
+        <!-- phone mockup column  -->
+        <div class="main-col phone-col">
+            <div class="side-bar"></div>
+            <!-- phone outer body  -->
+            <div class="phone-body">
+                <div class="notch"></div>
+                <div class="inner-body">
+                    <div class="inner-header">
+                        <span class="fas fa-chevron-left"></span>
+                        <img src="./images/avatar.jpg" alt="img">
+                        <div class="user-details">
+                            <p class="name">Samuel Green</p>
+                            <p class="isfree">Available to Walk</p>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="text-area">
+                        <div class="message left">That sounds great. I’d be happy with that.</div>
+                        <div class="message left">Could you send over some pictures of your dog, please?</div>
+                        <div class="message right image-msg">
+                            <img src="./images/dog-image-1.jpg" alt="img" />
+                            <img src="./images/dog-image-2.jpg" alt="img" />
+                            <img src="./images/dog-image-3.jpg" alt="img" />
+                        </div>
+                        <div class="message right">Here are a few pictures. She’s a happy girl!</div>
+                        <div class="message right">Can you make it?</div>
+                        <div class="message left">She looks so happy! The time we discussed works. How long shall I
+                            take her out for?</div>
+
+                        <div class="prices-container ">
+                            <form>
+                                <div class="radio-container ">
+                                    <input type="radio" name="walk_time" id="walk_time1" value="30">
+                                    <span class="price-text">30 minute walk</span>
+                                    <span class="price-val">$29</span>
+                                </div>
+                                <div class="radio-container ">
+                                    <input type="radio" name="walk_time" id="walk_time2" value="30">
+                                    <span class="price-text">1 hour walk</span>
+                                    <span class="price-val">$49</span>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="input-msg-container">
+                            <input type="text" name="msg" id="msg">
+                            <button type="button"> <span class="fas fa-angle-right"></span> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- text column  -->
+        <div class="main-col text-col">
+            <div class="text-container">
+                <h1 class="title">Simple booking</h1>
+                <p class="para">Stay in touch with our dog walkers through the chat interface. This makes it easy to
+                    discuss arrangements and make bookings. Once the walk has been completed you can rate
+                    your walker and book again all through the chat.</p>
+            </div>
+            <div class="side-bar"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!-- Samuel Green
+Available to Walk
+
+That sounds great. I’d be happy with that.
+
+Could you send over some pictures of your dog, please?
+
+Here are a few pictures. She’s a happy girl!
+
+Can you make it?
+
+She looks so happy! The time we discussed works. How long shall I take her out for?
+
+30 minute walk
+$29
+
+1 hour walk
+$49
+
+Type a message…
+
+Simple booking
+
+Stay in touch with our dog walkers through the chat interface. This makes it easy to
+discuss arrangements and make bookings. Once the walk has been completed you can rate
+your walker and book again all through the chat. -->

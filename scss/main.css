@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+html {
+  font-size: 10px;
+  font-family: "Rubik", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.main-container {
+  min-height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-container .main-col {
+  width: 50%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.main-container .main-col .side-bar {
+  position: absolute;
+  z-index: -2;
+  width: 60%;
+  height: 85%;
+}
+
+.phone-col .side-bar {
+  right: 50%;
+  top: 0;
+  border-bottom-left-radius: 20rem;
+  border-bottom-right-radius: 20rem;
+  background: linear-gradient(225deg, #e942ff -45%, #8838ff 100%);
+}
+
+.phone-body {
+  position: absolute;
+  left: 50%;
+  width: 43%;
+  background-color: white;
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.2rem 0.2rem 1rem 0.2rem rgba(0, 0, 0, 0.3);
+  border-radius: 2rem;
+  top: 50%;
+  padding: 1rem;
+  -webkit-transform: translate(-25%, -50%);
+          transform: translate(-25%, -50%);
+}
+
+.phone-body .notch {
+  position: absolute;
+  width: 50%;
+  height: 3rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: white;
+}
+
+.inner-body {
+  background-color: #f5f3f7;
+  border-radius: 2rem;
+}
+
+.inner-header {
+  border-radius: 2rem 2rem 0.5rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 1rem 1rem 1rem;
+  background: -webkit-gradient(linear, left top, right top, from(#8838ff), to(#e942ff));
+  background: linear-gradient(90deg, #8838ff 0%, #e942ff 100%);
+}
+
+.inner-header span {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.inner-header img {
+  margin-left: 0.7rem;
+  width: 13%;
+  border: 0.15rem solid white;
+  border-radius: 50%;
+}
+
+.inner-header .user-details {
+  margin-left: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.inner-header .user-details .name {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.inner-header .user-details .isfree {
+  color: #d89eff;
+  font-size: 0.8rem;
+}
+
+.inner-header .fa-ellipsis-h {
+  margin-left: auto;
+  position: relative;
+  font-size: 1rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: white;
+}
+
+.text-area {
+  padding: 1rem;
+  padding-bottom: 5.5rem;
+  overflow: auto;
+  position: relative;
+}
+
+.message {
+  padding: 0.7rem;
+  max-width: 90%;
+  font-size: 1rem;
+  clear: both;
+  margin-bottom: 1rem;
+  border-radius: 1.3rem;
+}
+
+.left {
+  border-bottom-left-radius: 0.5rem;
+  float: left;
+  background: #e2e1e1;
+  color: #9241c8;
+}
+
+.right {
+  border-bottom-right-radius: 0.5rem;
+  float: right;
+  color: #6e5d7e;
+  background: white;
+}
+
+.image-msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: transparent;
+}
+
+.image-msg img {
+  width: 25%;
+  margin-left: 1rem;
+  border-radius: 1rem;
+}
+
+.image-msg :first-child {
+  margin-left: 0rem !important;
+}
+
+.prices-container {
+  background: none;
+  float: left;
+  clear: both;
+  width: 70%;
+  margin-bottom: 1rem;
+}
+
+.prices-container form {
+  width: 100%;
+  height: 100%;
+}
+
+.prices-container form .radio-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.7rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(90deg, #e942ff 0%, #8838ff 100%);
+  margin-bottom: 1rem;
+  border-radius: 1.3rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.prices-container form .radio-container input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0.15rem solid #e570ff;
+}
+
+.prices-container form .radio-container input[type="radio"]:checked {
+  background-color: #8838ff;
+}
+
+.prices-container form .radio-container .price-text {
+  font-size: 0.8rem;
+}
+
+.prices-container form .radio-container .price-val {
+  margin-left: auto;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.prices-container form .radio-container:last-child {
+  margin-bottom: 0rem;
+}
+
+.input-msg-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background: white;
+  border-radius: 3rem;
+}
+
+.input-msg-container input[type="text"] {
+  padding: 1rem;
+  padding-right: 4rem;
+  width: 100%;
+  border: none;
+  border-radius: 3rem;
+}
+
+.input-msg-container input[type="text"]:focus {
+  outline: none;
+}
+
+.input-msg-container button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  border: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0.5rem;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  background: #3e2753;
+}
+
+.input-msg-container button:hover {
+  cursor: pointer;
+}
+
+.input-msg-container button span {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.text-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text-col .text-container {
+  text-align: left;
+  width: 60%;
+}
+
+.text-col .text-container h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: #3e2753;
+}
+
+.text-col .text-container p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #a39daa;
+}
+
+.text-col .side-bar {
+  left: 50%;
+  bottom: 0;
+  border-top-left-radius: 20rem;
+  border-top-right-radius: 20rem;
+  background: #f5f3f7;
+}
+
+@media (max-width: 1000px) {
+  .phone-body {
+    width: 57%;
+  }
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 650px) {
+  .phone-body {
+    width: 60%;
+  }
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 525px) {
+  html {
+    font-size: 8px;
+  }
+  .main-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-container .main-col {
+    width: 100%;
+  }
+  .main-container .main-col .side-bar {
+    height: 100%;
+  }
+  .text-col {
+    padding: 5rem 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .text-col .text-container {
+    text-align: center;
+  }
+  .phone-col {
+    height: 100vh;
+  }
+  .phone-col .phone-body {
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    font-size: 7px;
+  }
+  .phone-col .phone-body {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
